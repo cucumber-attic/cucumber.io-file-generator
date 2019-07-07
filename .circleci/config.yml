@@ -59,8 +59,9 @@ jobs:
           paths: 
             - .
       - persist_to_workspace:
-          root: /usr/local/bundle/bin
-          paths: bundler
+          root: /usr/local/bundle
+          paths:
+            - .
 
   test:
     executor: ruby
