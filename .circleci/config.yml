@@ -57,13 +57,14 @@ jobs:
       - persist_to_workspace:
           root: ~/cucumber
           paths: 
-            - "**/*"
+            - .
 
   test:
     executor: ruby
     steps:
       - attach_workspace:
           at: ~/cucumber
+      # - checkout
       - rspec
 
   generate:
@@ -71,6 +72,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/cucumber
+      # - checkout
       - generate_sitemaps
       - generate_rss
       - persist_to_workspace:
@@ -83,6 +85,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/cucumber
+      # - checkout
 
 ###
 ### Workflows ###
