@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <?xml-stylesheet type="text/xsl" href="//cucumber.ghost.io/sitemap.xsl"?>
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+         <url>
+            <loc>https://cucumber.ghost.io/author/theo/</loc>
+            <lastmod>2019-05-24T09:36:16.000Z</lastmod>
+         </url>
+         <url>
+            <loc>https://cucumber.ghost.io/author/matt/</loc>
+            <lastmod>2019-04-22T04:29:14.000Z</lastmod>
+            <image:image>
+               <image:loc>https://cucumber.ghost.io/content/images/2019/02/avatar.jpg</image:loc>
+               <image:caption>avatar.jpg</image:caption>
+            </image:image>
+         </url>
+      </urlset>
