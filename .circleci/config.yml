@@ -28,7 +28,6 @@ commands:
           when: on_success
           paths:
             - vendor/bundle
-            - /usr/local/bundle/bin/bundler
 
   rspec:
     description: "Run rspec tests"
@@ -59,6 +58,9 @@ jobs:
           root: ~/cucumber
           paths: 
             - .
+      - persist_to_workspace:
+          root: /usr/local/bundle/bin
+          paths: bundler
 
   test:
     executor: ruby
