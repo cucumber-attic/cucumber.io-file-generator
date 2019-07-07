@@ -89,8 +89,8 @@ workflows:
           requires:
             - test
       # - upload:
-          requires:
-            - generate
+        # requires:
+          #   - generate
     
   nightly:
     triggers:
@@ -109,5 +109,5 @@ workflows:
           requires:
             - test
       # - upload:
-          requires:
-            - generate
+        # requires:
+          #   - generate
