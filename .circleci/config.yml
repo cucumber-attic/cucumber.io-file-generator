@@ -20,14 +20,14 @@ commands:
     steps:
       - restore_cache:
           keys:
-            - v1.1-gemfile-{{ checksum "Gemfile.lock" }}
+            - v1.1.0-gemfile-{{ checksum "Gemfile.lock" }}
       - run: gem install bundler
       - run: bundle check --path vendor/bundle || bundle install --path vendor/bundle
       - save_cache:
-          key: v1.1-gemfile-{{ checksum "Gemfile.lock" }}
+          key: v1.1.0-gemfile-{{ checksum "Gemfile.lock" }}
           when: on_success
           paths:
-            - ~/cucumber/cucumber/vendor/bundle
+            - vendor/bundle
 
   rspec:
     description: "Run rspec tests"
