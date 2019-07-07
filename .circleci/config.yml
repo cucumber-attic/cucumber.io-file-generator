@@ -7,8 +7,8 @@ version: 2.1
 executors:
   ruby:
     docker:
-    - image: circleci/ruby:2.6.3
-  working_directory: ~/cucumber
+      - image: circleci/ruby:2.6.3
+    working_directory: ~/cucumber
 
 commands:
   gems:
