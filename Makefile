@@ -16,3 +16,7 @@ generate_sitemaps:
 .PHONY: generate_rss
 generate_rss: 
 	bundle exec ruby ./scripts/generate_rss.rb
+
+.PHONY: upload_to_s3
+upload_to_s3: 
+	bundle exec ruby ./scripts/upload_to_s3.rb

@@ -32,19 +32,14 @@ class Generator
 
   def generate_rss
     external_url = 'https://cucumber.ghost.io/rss/'
-    if last_mod_time(external_url) < last_mod_time('https://cucumber.io/blog/rss')
-      puts 'external rss not newer, skipping generation'
-      return
-    end
-    puts "generating new rss file"
+    puts 'external rss not newer, skipping generation' && return if last_mod_time(external_url) < last_mod_time('https://cucumber.io/blog/rss')
+    puts 'generating new rss file'
 
     ghost_parent = external_xml(external_url)
 
-    sanitize_map = [
-      ['cucumber.ghost.io/blog/', 'cucumber.io/blog/'],
-      ['cucumber.ghost.io/', 'cucumber.io/'],
-      ['cucumber.ghost.io/content/', 'cucumber.io/content/']
-    ]
+    sanitize_map = [['cucumber.ghost.io/blog/', 'cucumber.io/blog/'],
+                    ['cucumber.ghost.io/', 'cucumber.io/'],
+                    ['cucumber.ghost.io/content/', 'cucumber.io/content/']]
 
     sanitized_rss = sanitize_rss(ghost_parent.to_s, sanitize_map)
     final_rss = update_generator(sanitized_rss)
