@@ -83,8 +83,14 @@ workflows:
     jobs:
       - checkout
       - test
+          requires:
+            - checkout
       - generate
+          requires:
+            - test
       # - upload
+          requires:
+            - generate
     
   nightly:
     triggers:
@@ -97,5 +103,11 @@ workflows:
     jobs:
       - checkout
       - test
+          requires:
+            - checkout
       - generate
+          requires:
+            - test
       # - upload
+          requires:
+            - generate
