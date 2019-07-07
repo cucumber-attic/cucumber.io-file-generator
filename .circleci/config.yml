@@ -28,6 +28,7 @@ commands:
           when: on_success
           paths:
             - vendor/bundle
+            - /usr/local/bundle/bin/bundler
 
   rspec:
     description: "Run rspec tests"
