@@ -82,13 +82,13 @@ workflows:
   build:
     jobs:
       - checkout
-      - test
+      - test:
           requires:
             - checkout
-      - generate
+      - generate:
           requires:
             - test
-      # - upload
+      # - upload:
           requires:
             - generate
     
@@ -102,12 +102,12 @@ workflows:
                 - master
     jobs:
       - checkout
-      - test
+      - test:
           requires:
             - checkout
-      - generate
+      - generate:
           requires:
             - test
-      # - upload
+      # - upload:
           requires:
             - generate
