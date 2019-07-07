@@ -1,0 +1,101 @@
+version: 2.1
+
+###
+### Executors ###
+###
+
+executors:
+  ruby:
+    docker:
+    - image: circleci/ruby:2.6.3
+  working_directory: ~/cucumber
+
+commands:
+  gems:
+    description: "Install gems needed for testing"
+    steps:
+      - restore_cache:
+          keys:
+            - v1-gemfile-{{ checksum "Gemfile.lock" }}
+      - run: gem install bundler
+      - run: bundle install --path vendor/bundle
+      - save_cache:
+          key: v1-gemfile-{{ checksum "Gemfile.lock" }}
+          when: on_success
+          paths:
+            - ~/cucumber/cucumber/vendor/bundle
+
+  rspec:
+    description: "Run rspec tests"
+    steps:
+      - run: bundle exec parallel_rspec spec/
+  
+  generate_sitemaps:
+    description: "Checks to see if our sitemaps are out of date and regenerates them along with our pages map if they are"
+    steps:
+      - run: make generate_sitemaps
+  
+  generate_rss:
+    description: "Checks to see if our rss are out of date and regenerates them along with our pages map if they are"
+    steps:
+      - run: make generate_rss
+
+jobs:
+  checkout:
+    executor: ruby
+    steps:
+      - checkout
+      - gems
+      - persist_to_workspace:
+          root: ~/cucumber
+          paths: 
+            - "**/*"
+
+  test:
+    executor: ruby
+    steps:
+      - attach_workspace:
+          at: ~/cucumber
+      - rspec
+
+  generate:
+    executor: ruby
+    steps:
+      - attach_workspace:
+          at: ~/cucumber
+      - generate_sitemaps
+      - generate_rss
+      - persist_to_workspace:
+          root: ~/cucumber
+          paths:
+            - static/*
+
+  upload:
+    executor: ruby
+    steps:
+      - attach_workspace:
+          at: ~/cucumber
+
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - checkout
+      - test
+      - generate
+      # - upload
+    
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - checkout
+      - test
+      - generate
+      # - upload
