@@ -15,13 +15,17 @@ executors:
 ###
 
 commands:
+  bundler:
+    description: "Installs bundler"
+    steps:
+      - run: gem install bundler
+
   gems:
     description: "Install gems needed for testing"
     steps:
       - restore_cache:
           keys:
             - v1.1.0-gemfile-{{ checksum "Gemfile.lock" }}
-      - run: gem install bundler
       - run: bundle check --path vendor/bundle || bundle install --path vendor/bundle
       - save_cache:
           key: v1.1.0-gemfile-{{ checksum "Gemfile.lock" }}
@@ -53,14 +57,11 @@ jobs:
     executor: ruby
     steps:
       - checkout
+      - bundler
       - gems
       - persist_to_workspace:
           root: ~/cucumber
           paths: 
-            - .
-      - persist_to_workspace:
-          root: /usr/local/bundle
-          paths:
             - .
 
   test:
@@ -69,6 +70,7 @@ jobs:
       - attach_workspace:
           at: ~/cucumber
       # - checkout
+      - bundler
       - rspec
 
   generate:
@@ -77,6 +79,7 @@ jobs:
       - attach_workspace:
           at: ~/cucumber
       # - checkout
+      - bundler
       - generate_sitemaps
       - generate_rss
       - persist_to_workspace:
