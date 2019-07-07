@@ -10,6 +10,10 @@ executors:
       - image: circleci/ruby:2.6.3
     working_directory: ~/cucumber
 
+###
+### Commands ###
+###
+
 commands:
   gems:
     description: "Install gems needed for testing"
@@ -39,6 +43,10 @@ commands:
     description: "Checks to see if our rss are out of date and regenerates them along with our pages map if they are"
     steps:
       - run: make generate_rss
+
+###
+### Jobs ###
+###
 
 jobs:
   checkout:
@@ -76,6 +84,9 @@ jobs:
       - attach_workspace:
           at: ~/cucumber
 
+###
+### Workflows ###
+###
 
 workflows:
   version: 2
