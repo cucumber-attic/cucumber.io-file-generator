@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
 
-gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
+gem 'aws-sdk-s3', '~> 1.45'
 gem 'faraday', '~> 0.15.4'
 gem 'nokogiri', '~> 1.10', '>= 1.10.3'
 gem 'parallel_tests', '~> 2.28'

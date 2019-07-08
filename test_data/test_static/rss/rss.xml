@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title><![CDATA[Cucumber Blog]]></title>
+    <description><![CDATA[Thoughts, stories and ideas.]]></description>
+    <link>https://cucumber.io/</link>
+    <image>
+      <url>https://cucumber.io/favicon.png</url>
+      <title>Cucumber Blog</title>
+      <link>https://cucumber.io/</link>
+    </image>
+    <generator>Ghost 2.23 &amp; Cucumber</generator>
+    <lastBuildDate>Fri, 31 May 2019 23:53:35 GMT</lastBuildDate>
+    <atom:link href="https://cucumber.io/rss/" rel="self" type="application/rss+xml"/>
+    <ttl>60</ttl>
+    <item>
+      <title><![CDATA[Alex Schladebeck on Testing - Cucumber Podcast]]></title>
+      <description><![CDATA[<!--kg-card-begin: html--><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/625808718&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><!--kg-card-end: html--><p>This month on the Cucumber Podcast we sit down with Alex Schladebeck who identifies as a Tester.</p><p><a href="https://twitter.com/SalFreudenberg">Sal Freudenberg</a> and <a href="https://twitter.com/tooky">Steve Tooke</a> - co-founders of Cucumber - ask her about her recent keynote appearance at <a href="http://cukenfest.cucumber.io">CukenFest London</a> as well as her thoughts on the role of modern testers on agile</p>]]></description>
+      <link>https://cucumber.io/blog/alex-schladebeck-on-testing/</link>
+      <guid isPermaLink="false">5ce7bb3658b27b00c085bed0</guid>
+      <dc:creator><![CDATA[Theo England]]></dc:creator>
+      <pubDate>Fri, 24 May 2019 09:47:37 GMT</pubDate>
+      <media:content url="https://cucumber.io/content/images/2019/05/alex-cukenfest.png" medium="image"/>
+      <content:encoded><![CDATA[<!--kg-card-begin: html--><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/625808718&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><!--kg-card-end: html--><img src="https://cucumber.io/content/images/2019/05/alex-cukenfest.png" alt="Alex Schladebeck on Testing - Cucumber Podcast"><p>This month on the Cucumber Podcast we sit down with Alex Schladebeck who identifies as a Tester.</p><p><a href="https://twitter.com/SalFreudenberg">Sal Freudenberg</a> and <a href="https://twitter.com/tooky">Steve Tooke</a> - co-founders of Cucumber - ask her about her recent keynote appearance at <a href="http://cukenfest.cucumber.io">CukenFest London</a> as well as her thoughts on the role of modern testers on agile teams.</p><p>Alex can be found on <a href="https://cucumber.io/blog/alex-schladebeck-on-testing/twitter.com/alex_schl">Twitter</a>. Alex works for <a href="https://www.bredex.de/en/services">Bredex</a> a software consultancy shop based in Germany. </p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Distilling the Essence Webinar]]></title>
+      <description><![CDATA[<p>When creating our scenarios, we want to fully describe the desired functionality, but not over-describe it. We want our scenarios to do more than check for correct operation. </p><p>We want to paint a picture of what’s intended that aids understanding by others (or even ourselves) in the future.</p><p>Which</p>]]></description>
+      <link>https://cucumber.io/blog/distilling-the-essence/</link>
+      <guid isPermaLink="false">5c9b7b77a346fc00cc615104</guid>
+      <category><![CDATA[webinar]]></category>
+      <dc:creator><![CDATA[Theo England]]></dc:creator>
+      <pubDate>Wed, 27 Mar 2019 13:39:02 GMT</pubDate>
+      <media:content url="https://cucumber.io/content/images/2019/03/george-dinwiddie-round.png" medium="image"/>
+      <content:encoded><![CDATA[<img src="https://cucumber.io/content/images/2019/03/george-dinwiddie-round.png" alt="Distilling the Essence Webinar"><p>When creating our scenarios, we want to fully describe the desired functionality, but not over-describe it. We want our scenarios to do more than check for correct operation. </p><p>We want to paint a picture of what’s intended that aids understanding by others (or even ourselves) in the future.</p><p>Which details should we leave visible, and which should we hide? In this webinar presentation, we will look at ways to distil our scenarios down to their essence and remove distracting incidental details.</p><p>In this webinar recording, George Dinwiddie an experienced BDD writer, practitioner, and enthusiast, gives you some tips for writing scenarios which sing. </p><p>You can watch the recording on our YouTube channel <a href="https://www.youtube.com/watch?v=-vgM1YiCea8">here</a>.</p><h3 id="upcoming-events">Upcoming events</h3><p>BDD Kickstart London (April 2nd-3rd 2019) - A two-day class on Behaviour-Driven Development. <a href="https://cucumber.io/events/2019/04/bdd-kickstart-london">Learn more</a>. </p><p>CukenFest London (April 4th-5th) - Our annual BDD conference for the whole team. <a href="http://cukenfest.cucumber.io">Learn more</a>.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
