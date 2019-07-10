@@ -44,6 +44,11 @@ commands:
     steps:
       - run: make generate_rss
 
+  upload_to_s3:
+    description: "Uploads all files found in the static directory to s3"
+    steps:
+      - run: make upload_to_s3
+
 ###
 ### Jobs ###
 ###
@@ -64,7 +69,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/cucumber
-      # - checkout
       - gems
       - rspec
 
@@ -73,7 +77,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/cucumber
-      # - checkout
       - gems
       - generate_sitemaps
       - generate_rss
@@ -87,7 +90,8 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/cucumber
-      # - checkout
+      - gems
+      - upload_to_s3
 
 ###
 ### Workflows ###
@@ -104,9 +108,9 @@ workflows:
       - generate:
           requires:
             - test
-      # - upload:
-        # requires:
-          #   - generate
+      - upload:
+        requires:
+            - generate
     
   nightly:
     triggers:
@@ -124,6 +128,6 @@ workflows:
       - generate:
           requires:
             - test
-      # - upload:
-        # requires:
-          #   - generate
+      - upload:
+        requires:
+            - generate

@@ -2,7 +2,7 @@
 
 require 'aws-sdk-s3'
 
-# Uploader uploads all files found in the static directory
+# Uploader uploads all files found in the static directory to s3
 class Uploader
   def initialize(s3_client = Aws::S3::Client.new(region: 'eu-west-1'), bucket = 'cucumber-io-generated-files')
     @bucket = bucket
