@@ -6,6 +6,8 @@ require 'nokogiri'
 require 'pry-byebug'
 
 BASE_URL = ENV['BASE_URL'] || 'http://localhost:9001'
+ENV['AWS_ACCESS_KEY_ID'] = 'foo'
+ENV['AWS_SECRET_ACCESS_KEY'] = 'bar'
 
 RSpec.configure do |config|
   config.before(:suite) do
