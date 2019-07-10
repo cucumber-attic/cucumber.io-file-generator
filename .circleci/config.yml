@@ -109,7 +109,7 @@ workflows:
           requires:
             - test
       - upload:
-        requires:
+          requires:
             - generate
     
   nightly:
@@ -129,5 +129,5 @@ workflows:
           requires:
             - test
       - upload:
-        requires:
+          requires:
             - generate
