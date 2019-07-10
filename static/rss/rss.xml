@@ -9,10 +9,21 @@
       <title>Cucumber Blog</title>
       <link>https://cucumber.io/</link>
     </image>
-    <generator>Ghost 2.23 &amp; Cucumber</generator>
-    <lastBuildDate>Fri, 31 May 2019 23:53:35 GMT</lastBuildDate>
+    <generator>Ghost 2.25 &amp; Cucumber</generator>
+    <lastBuildDate>Tue, 09 Jul 2019 20:53:03 GMT</lastBuildDate>
     <atom:link href="https://cucumber.io/rss/" rel="self" type="application/rss+xml"/>
     <ttl>60</ttl>
+    <item>
+      <title><![CDATA[Cucumber Ltd acquired by SmartBear]]></title>
+      <description><![CDATA[<!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cucumber.io/content/images/2019/06/17614222-E185-4DBF-9D14-D69C23A9459F.jpeg" class="kg-image"><figcaption>The Cucumber Ltd employees, 25 June 2019</figcaption></figure><!--kg-card-end: image--><p>When we founded Cucumber in 2013, our goal was to provide commercial services and products that would <a href="https://cucumber.io/blog/cucumber-limited/">fund the development</a> of the Cucumber open source project.</p><p>Today I’m excited to announce that Cucumber Ltd has been <a href="https://smartbear.com/blog/test-and-monitor/smartbear-acquires-cucumber/">acquired</a> by <a href="https://smartbear.com">SmartBear</a>. We have spent</p>]]></description>
+      <link>https://cucumber.io/blog/cucumber-acquired-by-smartbear/</link>
+      <guid isPermaLink="false">5d10cd43b282470038fd1a66</guid>
+      <category><![CDATA[smartbear]]></category>
+      <dc:creator><![CDATA[Aslak Hellesøy]]></dc:creator>
+      <pubDate>Tue, 25 Jun 2019 12:00:00 GMT</pubDate>
+      <media:content url="https://cucumber.io/content/images/2019/06/4DB346B2-9EDD-46AE-B198-9AD3B52DCD47.png" medium="image"/>
+      <content:encoded><![CDATA[<!--kg-card-begin: image--><figure class="kg-card kg-image-card kg-card-hascaption"><img src="https://cucumber.io/content/images/2019/06/17614222-E185-4DBF-9D14-D69C23A9459F.jpeg" class="kg-image" alt="Cucumber Ltd acquired by SmartBear"><figcaption>The Cucumber Ltd employees, 25 June 2019</figcaption></figure><!--kg-card-end: image--><img src="https://cucumber.io/content/images/2019/06/4DB346B2-9EDD-46AE-B198-9AD3B52DCD47.png" alt="Cucumber Ltd acquired by SmartBear"><p>When we founded Cucumber in 2013, our goal was to provide commercial services and products that would <a href="https://cucumber.io/blog/cucumber-limited/">fund the development</a> of the Cucumber open source project.</p><p>Today I’m excited to announce that Cucumber Ltd has been <a href="https://smartbear.com/blog/test-and-monitor/smartbear-acquires-cucumber/">acquired</a> by <a href="https://smartbear.com">SmartBear</a>. We have spent half a year getting to know each other, and I am very confident that the Cucumber project will be in good hands.</p><p>SmartBear has a track record of acquiring teams behind successful open source projects, boosting their capacity with more people, and building commercial products around them. <a href="https://www.soapui.org/downloads/soapui.html">SoapUI</a>/<a href="https://smartbear.com/product/ready-api/soapui/overview/">SoapUI Pro</a> and <a href="https://swagger.io">Swagger</a>/<a href="https://swagger.io/tools/swaggerhub/">SwaggerHub</a> are two examples of this. These products' success depends on the success of their open source siblings.</p><p>In the short term we'll be 2-3 people working full-time on the <a href="https://github.com/cucumber">Cucumber open source</a> product, <a href="https://smartbear.com/product/free/">supported by SmartBear</a>. This will give us a huge productivity boost. It will also let us focus on new exciting features, and not just bug fixes and platform upgrades. We'll also be able to offer much better support to our amazing community of users and contributors.</p><p>Cucumber and SmartBear are also aligned with our commercial products. The Cucumber <a href="https://cucumber.io/jam">Jam</a> team will be joining the SmartBear <a href="https://hiptest.com">HipTest</a> team to build collaboration tools in the BDD and testing space.</p>]]></content:encoded>
+    </item>
     <item>
       <title><![CDATA[Alex Schladebeck on Testing - Cucumber Podcast]]></title>
       <description><![CDATA[<!--kg-card-begin: html--><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/625808718&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><!--kg-card-end: html--><p>This month on the Cucumber Podcast we sit down with Alex Schladebeck who identifies as a Tester.</p><p><a href="https://twitter.com/SalFreudenberg">Sal Freudenberg</a> and <a href="https://twitter.com/tooky">Steve Tooke</a> - co-founders of Cucumber - ask her about her recent keynote appearance at <a href="http://cukenfest.cucumber.io">CukenFest London</a> as well as her thoughts on the role of modern testers on agile</p>]]></description>
@@ -227,31 +238,6 @@ At the same time, making sure to build it right can be quite a challenge. Especi
 <p>On Twitter:</p>
 <p>Janet Gregory <a href="https://twitter.com/janetgregoryca">@janetgregoryca</a><br>
 Lisa Crispin <a href="https://twitter.com/lisacrispin">@lisacrispin</a></p>
-<p><a href="https://twitter.com/cucumberbdd">Cucumber on Twitter</a></p>
-<p>You can also listen and download the podcast on <a href="https://itunes.apple.com/gb/podcast/cucumber-podcast-rss/id1078896635">iTunes</a>, <a href="http://www.stitcher.com/s?fid=81999&amp;refid=stpr">Stitcher</a> or wherever you get your podcasts.</p>
-<p>Join us in our <a href="https://cucumber.io/support#slack">Slack channel</a> or on <a href="https://twitter.com/cucumberbdd">Twitter</a></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title><![CDATA[Domain Storytelling - Cucumber Podcast]]></title>
-      <description><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/543830436&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<p>This month on the Cucumber Podcast we speak to Stefan Hofer about Domain Storytelling. Stefan describes Domain Storytelling as &quot;a workshop format which helps people have a conversation about their domain; the idea is that domain experts tell stories that explain how people and software systems work together.&quot;</p>]]></description>
-      <link>https://cucumber.io/blog/domain-storytelling/</link>
-      <guid isPermaLink="false">5c59a90da554ed00c06b4d08</guid>
-      <category><![CDATA[podcast]]></category>
-      <dc:creator><![CDATA[Theo England]]></dc:creator>
-      <pubDate>Wed, 12 Dec 2018 01:00:00 GMT</pubDate>
-      <media:content url="https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-1.2.1&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjExNzczfQ" medium="image"/>
-      <content:encoded><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/543830436&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-<img src="https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ" alt="Domain Storytelling - Cucumber Podcast"><p>This month on the Cucumber Podcast we speak to Stefan Hofer about Domain Storytelling. Stefan describes Domain Storytelling as &quot;a workshop format which helps people have a conversation about their domain; the idea is that domain experts tell stories that explain how people and software systems work together.&quot;</p>
-<p>Although well known and celebrated in the Domain Driven Design community, Domain Storytelling is starting to be discovered by software teams wanting to find innovative ways to build shared understanding.</p>
-<p>Asking the questions from Cucumber is Matt Wynne and Sallyann Freudenberg.</p>
-<p><em>Shownotes:</em></p>
-<p><a href="http://www.domainstorytelling.org/">Domain Storytelling</a></p>
-<p>Find Context Boundaries with Domain Storytelling - Stefan Hofer and Henning Schwenter - <a href="https://www.youtube.com/watch?v=Y1ykXnl6r7s">Link</a></p>
-<p>CukenFest London - Our annual BDD conference happening on April 4th-5th 2019 - <a href="http://cukenfest.cucumber.io/">Link</a></p>
-<p>The &quot;Swim&quot; System - <a href="http://wiki.eclipse.org/images/2/20/Swim_System_PNSQC_2007_Paper.pdf">Link</a></p>
-<p><a href="https://twitter.com/hofstef">Stefan on Twitter</a></p>
 <p><a href="https://twitter.com/cucumberbdd">Cucumber on Twitter</a></p>
 <p>You can also listen and download the podcast on <a href="https://itunes.apple.com/gb/podcast/cucumber-podcast-rss/id1078896635">iTunes</a>, <a href="http://www.stitcher.com/s?fid=81999&amp;refid=stpr">Stitcher</a> or wherever you get your podcasts.</p>
 <p>Join us in our <a href="https://cucumber.io/support#slack">Slack channel</a> or on <a href="https://twitter.com/cucumberbdd">Twitter</a></p>

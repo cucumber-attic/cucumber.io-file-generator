@@ -1,21 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//cucumber.io/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://cucumber.io/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2018-11-30</lastmod>
+    <lastmod>2019-07-09</lastmod>
   </url>
   <url>
     <loc>https://cucumber.io/docs</loc>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <lastmod>2018-11-30</lastmod>
+    <lastmod>2019-07-09</lastmod>
   </url>
   <url>
     <loc>https://cucumber.io/events</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.75</priority>
     <lastmod>2018-11-30</lastmod>
   </url>
@@ -73,7 +72,7 @@
     <loc>https://cucumber.io/events/2019/04/bdd-kickstart-london</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2019-03-26</lastmod>
+    <lastmod>2019-05-02</lastmod>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5c7d00d1c83025828b4b45df/1555062631990/jonjagger400.jpg</image:loc>
       <image:title>Events - BDD Kickstart, London</image:title>
@@ -94,17 +93,33 @@
     </image:image>
   </url>
   <url>
-    <loc>https://cucumber.io/events/2019/04/bdd-kickstart-stockholm</loc>
+    <loc>https://cucumber.io/events/2019/05/bdd-kickstart-san-francisco</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2019-04-12</lastmod>
+    <lastmod>2019-05-28</lastmod>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5cb06098a4222f112b9b992f/1555062943115/thomas-sundberg.png</image:loc>
-      <image:title>Events - BDD Kickstart, Stockholm</image:title>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ccae9b84e17b65a8b338fb6/1556801988099/ryan-400.png</image:loc>
+      <image:title>Events - BDD Kickstart, San Francisco</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5cb05f679b747a373a65786e/1536142677715/Cukenfest+2018-1681.jpg</image:loc>
-      <image:title>Events - BDD Kickstart, Stockholm</image:title>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ccaf938e79c704b25b392e6/1556805970805/cukenfest-jennek.jpg</image:loc>
+      <image:title>Events - BDD Kickstart, San Francisco</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/5ced0e6eeb39313d13c1f739/5ced0e8afa0d606ea9c8949f/1559039629371/ezgif.com-webp-to-jpg+%284%29.jpg</image:loc>
+      <image:title>Events - BDD Kickstart, San Francisco</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/5ced0e6eeb39313d13c1f739/5ced0e80b208fc0bb16f5b77/1559039617695/ezgif.com-webp-to-jpg+%283%29.jpg</image:loc>
+      <image:title>Events - BDD Kickstart, San Francisco</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/5ced0e6eeb39313d13c1f739/5ced0e7af9619a25f97706d9/1559039611444/ezgif.com-webp-to-jpg+%282%29.jpg</image:loc>
+      <image:title>Events - BDD Kickstart, San Francisco</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/5ced0e6eeb39313d13c1f739/5ced0e6e6e9a7f68cdb3ce96/1559039600099/ezgif.com-webp-to-jpg+%281%29.jpg</image:loc>
+      <image:title>Events - BDD Kickstart, San Francisco</image:title>
     </image:image>
   </url>
   <url>
@@ -134,22 +149,10 @@
     </image:image>
   </url>
   <url>
-    <loc>https://cucumber.io/support</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2018-11-07</lastmod>
-  </url>
-  <url>
-    <loc>https://cucumber.io/support/posting-rules</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2018-11-01</lastmod>
-  </url>
-  <url>
     <loc>https://cucumber.io/home</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2019-03-12</lastmod>
+    <lastmod>2019-04-21</lastmod>
     <image:image>
       <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/5b65790b2b6a286b620847c9/5b657c19352f53d3811c39a8/1533377562191/download.png</image:loc>
       <image:title>Home</image:title>
@@ -221,6 +224,58 @@
     </image:image>
   </url>
   <url>
+    <loc>https://cucumber.io/school</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2019-06-14</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ca9a3ea652deac333a3a6cd/1554621421883/CukeUp-7418.jpg</image:loc>
+      <image:title>School</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ca99e80ec212d909812b713/1554620034517/</image:loc>
+      <image:title>School</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ca99e67eb393122e832c1cc/1554620008874/CukeUp-7459.jpg</image:loc>
+      <image:title>School</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cucumber.io/training</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2019-07-07</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caaab1d15fcc0da6e5d3339/1554688799675/bdd-kickstart-white%281%29.png</image:loc>
+      <image:title>Training</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5cd251a615fcc0aea16711c2/1557287335785/learning-resources.jpg</image:loc>
+      <image:title>Training</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5cd2528b35a9b700019f80b9/1557287564904/public-courses.jpg</image:loc>
+      <image:title>Training</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caaa91b0d92973163540ede/1554688284253/learn-hero.jpg</image:loc>
+      <image:title>Training</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cucumber.io/support</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2019-04-26</lastmod>
+  </url>
+  <url>
+    <loc>https://cucumber.io/support/posting-rules</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2019-06-22</lastmod>
+  </url>
+  <url>
     <loc>https://cucumber.io/trainers</loc>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
@@ -287,71 +342,15 @@
     </image:image>
   </url>
   <url>
-    <loc>https://cucumber.io/school</loc>
+    <loc>https://cucumber.io/javascript-upload</loc>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
-    <lastmod>2019-04-13</lastmod>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ca9a3ea652deac333a3a6cd/1554621421883/CukeUp-7418.jpg</image:loc>
-      <image:title>School</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ca99e80ec212d909812b713/1554620034517/</image:loc>
-      <image:title>School</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5ca99e67eb393122e832c1cc/1554620008874/CukeUp-7459.jpg</image:loc>
-      <image:title>School</image:title>
-    </image:image>
+    <lastmod>2019-06-16</lastmod>
   </url>
   <url>
-    <loc>https://cucumber.io/training</loc>
+    <loc>https://cucumber.io/privacy</loc>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
-    <lastmod>2019-04-08</lastmod>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab378e79c701af1fa2629/1554690940311/product-testable.jpg</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab3a7a4222f438a0b8424/1554690986402/product-enterprise.jpg</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab3239140b7d3bdef092b/1554690852477/product-cucumber.jpg</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab3444e17b67af934e692/1554690885468/product-coaching.jpg</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab313b208fc87634f64d9/1554690836130/product-fundamentals.jpg</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caaab1d15fcc0da6e5d3339/1554688799675/bdd-kickstart-white%281%29.png</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab0cbe5e5f0b640c8e8d8/1554690258754/icon-pro.png</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab04ce2c48381dbba09ad/1554690272473/icon-lightbulb.png</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab133e5e5f0b640c8ecba/1554690362251/icon-laptop.png</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caab14a085229fcaa8b985e/1554690378414/icon-target.png</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://static1.squarespace.com/static/5b64cabf5b409bbf05dbd8b3/t/5caaa91b0d92973163540ede/1554688284253/learn-hero.jpg</image:loc>
-      <image:title>Training</image:title>
-    </image:image>
+    <lastmod>2019-06-22</lastmod>
   </url>
 </urlset>
