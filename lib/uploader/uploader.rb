@@ -27,7 +27,7 @@ class Uploader
 
   def s3_key(filepath)
     path = File.dirname(filepath).split('/')
-    "#{path[-1]}/#{File.basename(filepath)}"
+    path[-1] == 'sitemaps' ? File.basename(filepath) : "#{path[-1]}/#{File.basename(filepath)}"
   end
 
   def s3_upload(key, file)
