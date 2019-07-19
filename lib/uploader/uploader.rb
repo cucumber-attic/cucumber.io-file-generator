@@ -6,7 +6,7 @@ require 'aws-sdk-s3'
 class Uploader
   def initialize(s3_client = Aws::S3::Client.new(region: 'eu-west-1'), bucket = 'cucumber-io-generated-files')
     @bucket = bucket
-    @s3 = s3_client
+    @s3_client = s3_client
   end
 
   def upload(location = './static')
@@ -31,7 +31,8 @@ class Uploader
   end
 
   def s3_upload(key, file)
-    obj = @s3.bucket(@bucket).object(key)
+    s3 = Aws::S3::Resource.new(client: @s3_client)
+    obj = s3.bucket(@bucket).object(key)
     obj.upload_file(file)
   end
 end
