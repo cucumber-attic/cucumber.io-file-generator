@@ -31,7 +31,7 @@ class Uploader
   end
 
   def s3_upload(key, file)
-    obj = s3.bucket(@bucket).object(key)
+    obj = @s3.bucket(@bucket).object(key)
     obj.upload_file(file)
   end
 end
