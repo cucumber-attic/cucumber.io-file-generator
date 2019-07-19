@@ -42,7 +42,7 @@ describe Generator do
   describe 'local_xml' do
     it 'reads a local xml file from disk and returns that xml parsed' do
       expected =
-        '<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//cucumber.io/sitemap.xsl"?>
+        '<?xml version="1.0" encoding="UTF-8"?>
         <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           <sitemap>
             <loc>https://cucumber.io/sitemap-pages.xml</loc>
@@ -287,36 +287,35 @@ describe Generator do
           '<?xml version="1.0" encoding="UTF-8"?>
           <?xml-stylesheet type="text/xsl" href="//cucumber.ghost.io/sitemap.xsl"?>
           <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-             <url>
-                <loc>https://cucumber.ghost.io/blog/alex-schladebeck-on-testing/</loc>
-                <lastmod>2019-05-24T09:47:37.000Z</lastmod>
-                <image:image>
-                   <image:loc>https://cucumber.ghost.io/content/images/2019/05/alex-cukenfest.png</image:loc>
-                   <image:caption>alex-cukenfest.png</image:caption>
-                </image:image>
-             </url>
-             <url>
-                <loc>https://cucumber.ghost.io/blog/illustrating-scenarios/</loc>
-                <lastmod>2019-04-05T04:34:10.000Z</lastmod>
-             </url>
+          <url>
+              <loc>https://cucumber.ghost.io/blog/alex-schladebeck-on-testing/</loc>
+              <lastmod>2019-05-24T09:47:37.000Z</lastmod>
+              <image:image>
+                  <image:loc>https://cucumber.ghost.io/content/images/2019/05/alex-cukenfest.png</image:loc>
+                  <image:caption>alex-cukenfest.png</image:caption>
+              </image:image>
+          </url>
+          <url>
+              <loc>https://cucumber.ghost.io/blog/illustrating-scenarios/</loc>
+              <lastmod>2019-04-05T04:34:10.000Z</lastmod>
+          </url>
           </urlset>'
 
         sanitized_xml =
           '<?xml version="1.0" encoding="UTF-8"?>
-          <?xml-stylesheet type="text/xsl" href="//cucumber.io/sitemap.xsl"?>
           <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-             <url>
-                <loc>https://cucumber.io/blog/alex-schladebeck-on-testing/</loc>
-                <lastmod>2019-05-24T09:47:37.000Z</lastmod>
-                <image:image>
-                   <image:loc>https://cucumber.io/content/images/2019/05/alex-cukenfest.png</image:loc>
-                   <image:caption>alex-cukenfest.png</image:caption>
-                </image:image>
-             </url>
-             <url>
-                <loc>https://cucumber.io/blog/illustrating-scenarios/</loc>
-                <lastmod>2019-04-05T04:34:10.000Z</lastmod>
-             </url>
+          <url>
+              <loc>https://cucumber.io/blog/alex-schladebeck-on-testing/</loc>
+              <lastmod>2019-05-24T09:47:37.000Z</lastmod>
+              <image:image>
+                  <image:loc>https://cucumber.io/content/images/2019/05/alex-cukenfest.png</image:loc>
+                  <image:caption>alex-cukenfest.png</image:caption>
+              </image:image>
+          </url>
+          <url>
+              <loc>https://cucumber.io/blog/illustrating-scenarios/</loc>
+              <lastmod>2019-04-05T04:34:10.000Z</lastmod>
+          </url>
           </urlset>'
 
         input = [

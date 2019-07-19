@@ -33,6 +33,6 @@ class Uploader
   def s3_upload(key, file)
     s3 = Aws::S3::Resource.new(client: @s3_client)
     obj = s3.bucket(@bucket).object(key)
-    obj.upload_file(file)
+    obj.upload_file(File.absolute_path(file))
   end
 end

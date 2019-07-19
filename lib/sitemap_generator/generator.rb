@@ -12,7 +12,7 @@ class Generator
   def generate_sitemaps
     # Setup data for current sitemaps
     ghost_parent = external_xml('https://cucumber.ghost.io/sitemap.xml')
-    cuke_parent = local_xml('./static/sitemaps/sitemap.xml')
+    cuke_parent = external_xml('https://cucumber.io/sitemap.xml')
 
     # Gather URL of child maps that need to be regenerated
     children_to_update = find_children_to_update(ghost_parent, cuke_parent).push('https://cucumber-website.squarespace.com/sitemap.xml')
@@ -59,8 +59,7 @@ class Generator
     res = head(url)
 
     last_mod = res.headers.dig('Last-Modified') || res.headers.dig('last-modified')
-
-    Time.parse(last_mod)
+    last_mod.nil? ? Time.at(0) : Time.parse(last_mod)
   end
 
   def external_xml(url)
@@ -128,6 +127,8 @@ class Generator
   def sanitize(input)
     edit = input.dup
     edit.gsub!('.ghost', '')
+    edit.gsub!(/<\?xml-stylesheet type="text\/xsl" href="\/\/cucumber\.io\/sitemap.xsl"\?>\n\s+/, '')
+    edit.gsub!(/<\?xml-stylesheet type="text\/xsl" href="\/\/cucumber\.ghost\.io\/sitemap.xsl"\?>\n\s+/, '')
     edit.gsub!('cucumber-website.squarespace.com', 'cucumber.io')
 
     edit
