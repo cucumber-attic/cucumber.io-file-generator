@@ -19,6 +19,12 @@ RSpec.configure do |config|
   end
 end
 
+def local_xml(filepath)
+  res = File.read(filepath)
+
+  xml(res)
+end
+
 def xml(location)
   Nokogiri::XML(location) do |config|
     config.strict.noblanks

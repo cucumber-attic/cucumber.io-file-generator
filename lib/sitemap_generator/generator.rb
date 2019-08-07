@@ -13,9 +13,12 @@ class Generator
     # Setup data for current sitemaps
     ghost_parent = external_xml('https://cucumber.ghost.io/sitemap.xml')
     cuke_parent = external_xml('https://cucumber.io/sitemap.xml')
+    cuke_pages = external_xml('https://cucumber.io/sitemap-pages.xml')
+    square_external = external_xml('https://cucumber-website.squarespace.com/sitemap.xml')
 
     # Gather URL of child maps that need to be regenerated
-    children_to_update = find_children_to_update(ghost_parent, cuke_parent).push('https://cucumber-website.squarespace.com/sitemap.xml')
+    children_to_update = find_children_to_update(ghost_parent, cuke_parent)
+    children_to_update.push('https://cucumber-website.squarespace.com/sitemap.xml') if update_squarespace?(cuke_pages, square_external)
 
     # Generate sanitized versions of each child
     children_data = load_children(children_to_update)
@@ -74,8 +77,8 @@ class Generator
     xml(res)
   end
 
-  def xml(location)
-    Nokogiri::XML(location) do |config|
+  def xml(data)
+    Nokogiri::XML(data) do |config|
       config.strict.noblanks
     end
   end
@@ -97,6 +100,22 @@ class Generator
 
       loc
     end.compact
+  end
+
+  # update_squarespace compares a prepared cucumber sitemap to the current squarespace map to see
+  # if it needs to be updated
+  def update_squarespace?(cuke, square)
+    return true
+  end
+
+  def remove_added_elements(cuke_xml)
+    duped_xml = cuke_xml.dup
+
+    duped_xml.css('urlset url loc').each do |u|
+      u.parent.remove if ['https://cucumber.io/blog', 'https://cucumber.io/docs'].include? u.text
+    end
+
+    duped_xml
   end
 
   def local_cuke_data(data)

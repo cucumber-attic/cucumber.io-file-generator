@@ -208,6 +208,55 @@ describe Generator do
     end
   end
 
+  describe 'remove_added_elements' do
+    it 'returns an xml object with the fields we have previously added' do
+      input = xml('<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+         <url>
+            <loc>https://cucumber.io/blog</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.75</priority>
+            <lastmod>2019-08-07</lastmod>
+         </url>
+         <url>
+            <loc>https://cucumber.io/docs</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.75</priority>
+            <lastmod>2019-08-07</lastmod>
+         </url>
+      </urlset>')
+      expected = xml('<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" />')
+
+      g = Generator.new
+      actual = g.remove_added_elements(input)
+
+      expect(actual.to_xml).to eq expected.to_xml
+    end
+  end
+
+  describe 'update_squarespace?' do
+    g = Generator.new
+    context 'when there are squarespace specific pages to be updated' do
+      context 'when the events page is out of date' do
+        it 'returns true' do
+          cuke = local_xml('test_data/sitemaps/cuke_pages_current.xml')
+          square = local_xml('test_data/sitemaps/squarespace_sitemap.xml')
+
+          actual = g.update_squarespace?(cuke, square)
+
+          expect(actual).to be true
+        end
+      end
+    end
+
+    context 'when there are NOT squarespace specific pages to be updated' do
+      xit 'returns false' do
+
+      end
+    end
+  end
+
   describe 'load_children' do
     it 'loads the provided child maps at the provided urls' do
       posts_child =
