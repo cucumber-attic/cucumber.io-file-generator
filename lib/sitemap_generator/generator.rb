@@ -20,6 +20,11 @@ class Generator
     children_to_update = find_children_to_update(ghost_parent, cuke_parent)
     children_to_update.push('https://cucumber-website.squarespace.com/sitemap.xml') if update_squarespace?(cuke_pages, square_external)
 
+    if children_to_update.empty?
+      puts "nothing to update, returning early"
+      return
+    end
+
     # Generate sanitized versions of each child
     children_data = load_children(children_to_update)
     sanitized_children = sanitize_children(children_data)
@@ -109,7 +114,10 @@ class Generator
     cuke_dates = urls_and_lastmods(cuke_no_added)
     square_dates = urls_and_lastmods(square)
 
-    cuke_dates == square_dates
+    update = cuke_dates != square_dates
+    puts "need to update squarespace sitemap" if update && ENV['RSPEC'] != 'true'
+
+    update
   end
 
   def remove_added_elements(cuke_xml)
