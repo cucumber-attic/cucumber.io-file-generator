@@ -238,21 +238,24 @@ describe Generator do
   describe 'update_squarespace?' do
     g = Generator.new
     context 'when there are squarespace specific pages to be updated' do
-      context 'when the events page is out of date' do
-        it 'returns true' do
-          cuke = local_xml('test_data/sitemaps/cuke_pages_current.xml')
-          square = local_xml('test_data/sitemaps/squarespace_sitemap.xml')
+      it 'returns true' do
+        cuke = local_xml('test_data/sitemaps/cuke_pages_current.xml')
+        square = local_xml('test_data/sitemaps/squarespace_sitemap.xml')
 
-          actual = g.update_squarespace?(cuke, square)
+        actual = g.update_squarespace?(cuke, square)
 
-          expect(actual).to be true
-        end
+        expect(actual).to be true
       end
     end
 
     context 'when there are NOT squarespace specific pages to be updated' do
-      xit 'returns false' do
+      it 'returns false' do
+        cuke = local_xml('test_data/sitemaps/cuke_pages_ood.xml')
+        square = local_xml('test_data/sitemaps/squarespace_sitemap.xml')
 
+        actual = g.update_squarespace?(cuke, square)
+
+        expect(actual).to be false
       end
     end
   end

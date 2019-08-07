@@ -105,7 +105,11 @@ class Generator
   # update_squarespace compares a prepared cucumber sitemap to the current squarespace map to see
   # if it needs to be updated
   def update_squarespace?(cuke, square)
-    return true
+    cuke_no_added = remove_added_elements(cuke)
+    cuke_dates = urls_and_lastmods(cuke_no_added)
+    square_dates = urls_and_lastmods(square)
+
+    cuke_dates == square_dates
   end
 
   def remove_added_elements(cuke_xml)
@@ -116,6 +120,12 @@ class Generator
     end
 
     duped_xml
+  end
+
+  def urls_and_lastmods(xml)
+    xml.css('urlset url').collect do |n|
+      [URI(n.css('loc').text).path, n.css('lastmod').text]
+    end.to_h
   end
 
   def local_cuke_data(data)
@@ -146,8 +156,8 @@ class Generator
   def sanitize(input)
     edit = input.dup
     edit.gsub!('.ghost', '')
-    edit.gsub!(/<\?xml-stylesheet type="text\/xsl" href="\/\/cucumber\.io\/sitemap.xsl"\?>\n\s+/, '')
-    edit.gsub!(/<\?xml-stylesheet type="text\/xsl" href="\/\/cucumber\.ghost\.io\/sitemap.xsl"\?>\n\s+/, '')
+    edit.gsub!(%r{<\?xml-stylesheet type="text/xsl" href="//cucumber\.io/sitemap.xsl"\?>\n\s+}, '')
+    edit.gsub!(%r{<\?xml-stylesheet type="text/xsl" href="//cucumber\.ghost\.io/sitemap.xsl"\?>\n\s+}, '')
     edit.gsub!('cucumber-website.squarespace.com', 'cucumber.io')
 
     edit
