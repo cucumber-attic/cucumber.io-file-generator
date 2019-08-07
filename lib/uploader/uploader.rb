@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'aws-sdk-s3'
-require 'pry-byebug'
 
 # Uploader uploads all files found in the static directory to s3
 class Uploader
@@ -13,7 +12,6 @@ class Uploader
   def upload(location = './static')
     files = Dir.glob(location + '/**/*.*')
 
-    binding.pry
     if files.empty?
       return "nothing to upload, skipping rest of process"
     end
