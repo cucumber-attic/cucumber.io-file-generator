@@ -15,7 +15,7 @@ class Uploader
     success = 0
     files.each do |file|
       key = s3_key(file)
-      puts "uploading #{file} to #{key}"
+      puts "uploading #{file} to #{key}" unless ENV['RSPEC'] == 'true'
       s3_upload(key, file)
       success += 1
     end
