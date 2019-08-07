@@ -239,7 +239,7 @@ describe Generator do
     g = Generator.new
     context 'when there are squarespace specific pages to be updated' do
       it 'returns true' do
-        cuke = local_xml('test_data/sitemaps/cuke_pages_current.xml')
+        cuke = local_xml('test_data/sitemaps/cuke_pages_ood.xml')
         square = local_xml('test_data/sitemaps/squarespace_sitemap.xml')
 
         actual = g.update_squarespace?(cuke, square)
@@ -250,7 +250,7 @@ describe Generator do
 
     context 'when there are NOT squarespace specific pages to be updated' do
       it 'returns false' do
-        cuke = local_xml('test_data/sitemaps/cuke_pages_ood.xml')
+        cuke = local_xml('test_data/sitemaps/cuke_pages_current.xml')
         square = local_xml('test_data/sitemaps/squarespace_sitemap.xml')
 
         actual = g.update_squarespace?(cuke, square)
