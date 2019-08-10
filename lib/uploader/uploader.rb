@@ -12,9 +12,7 @@ class Uploader
   def upload(location = './static')
     files = Dir.glob(location + '/**/*.*')
 
-    if files.empty?
-      return "nothing to upload, skipping rest of process"
-    end
+    return 'nothing to upload, skipping rest of process' if files.empty?
 
     success = 0
     files.each do |file|
