@@ -21,7 +21,7 @@ class Generator
     children_to_update.push('https://cucumber-website.squarespace.com/sitemap.xml') if update_squarespace?(cuke_pages, square_external)
 
     if children_to_update.empty?
-      puts "nothing to update, returning early"
+      puts 'nothing to update, returning early'
       return
     end
 
@@ -40,8 +40,14 @@ class Generator
 
   def generate_rss
     external_url = 'https://cucumber.ghost.io/rss/'
-    puts 'external rss not newer, skipping generation' && return if last_mod_time(external_url) < last_mod_time('https://cucumber.io/blog/rss')
-    puts 'generating new rss file'
+    cuke_url = 'https://cucumber.io/blog/rss'
+
+    if last_mod_time(external_url) <= last_mod_time(cuke_url)
+      puts 'external rss not newer, skipping generation'
+      return
+    else
+      puts 'generating new rss file'
+    end
 
     ghost_parent = external_xml(external_url)
 
@@ -115,7 +121,7 @@ class Generator
     square_dates = urls_and_lastmods(square)
 
     update = cuke_dates != square_dates
-    puts "need to update squarespace sitemap" if update && ENV['RSPEC'] != 'true'
+    puts 'need to update squarespace sitemap' if update && ENV['RSPEC'] != 'true'
 
     update
   end
